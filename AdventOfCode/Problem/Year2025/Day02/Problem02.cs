@@ -20,16 +20,26 @@ public class Problem02 : ProblemSolver
             for (long i = r.Min; i <= r.Max; i++)
             {
                 var numberOfDigits = (int)Math.Floor(Math.Log10(i)) + 1;
-                if (numberOfDigits % 2 == 1) continue;
 
-                var mid = numberOfDigits / 2;
-                var divisor = (long)Math.Pow(10, mid);
-
-                var firstHalf = i / divisor;
-                var secondHalf = i % divisor;
-                if (firstHalf == secondHalf)
+                for (int j = 1; j < numberOfDigits; j++)
                 {
-                    count += i;
+                    if (numberOfDigits % j != 0) continue;
+
+                    var parts = new List<long>();
+                    var divisor = (long)Math.Pow(10, j);
+                    var temp = i;
+                    
+                    while (temp > 0)
+                    {
+                        parts.Add(temp % divisor);
+                        temp /= divisor;
+                    }
+                    
+                    if (parts.Distinct().Count() == 1)
+                    {
+                        count += i;
+                        break;
+                    }
                 }
             }
         });
