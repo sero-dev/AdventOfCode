@@ -1,8 +1,8 @@
 ﻿namespace AdventOfCode.Problem.Year2025.Day03;
 
-public class Problem02 : ProblemSolver
+public class Problem02Rtl : ProblemSolver
 {
-    public Problem02() : base(2025, 3, 2) {}
+    public Problem02Rtl() : base(2025, 3, 2) {}
 
     public override long Solve(string[] input)
     {

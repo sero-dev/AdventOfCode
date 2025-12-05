@@ -78,7 +78,7 @@ selectedProblems.ForEach(p =>
     stopWatch.Stop();
 
     AnsiConsole.MarkupLine($"Answer: [green] {solution}[/]");
-    AnsiConsole.MarkupLine($"Time taken: [blue]{stopWatch.ElapsedMilliseconds} ms[/]");
+    AnsiConsole.MarkupLine($"Time taken: [blue]{stopWatch.ElapsedTicks / (TimeSpan.TicksPerMicrosecond)} microsecond[/]");
     AnsiConsole.WriteLine();
 });
 

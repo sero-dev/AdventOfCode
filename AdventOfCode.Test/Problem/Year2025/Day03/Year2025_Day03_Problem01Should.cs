@@ -2,7 +2,7 @@
 
 namespace AdventOfCode.Test.Problem.Year2025.Day03;
 
-public class Year2025_Day03_Problem01Should
+public class Year2025_Day04_Problem01Should
 {
     [Fact]
     public void SolveReturnsCorrectResultForSampleInput()
