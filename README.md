@@ -5,10 +5,6 @@ Each day’s puzzle includes a dedicated solution class, input file, and unit te
 
 ---
 
-# Advent of Code – .NET Solutions
-
-**sero-dev/AdventOfCode** is a collection of solutions to Advent of Code puzzles implemented in C# as a .NET console application. Each daily puzzle has its own solution class, input file, and corresponding unit tests.
-
 ## What is Advent of Code?
 
 Advent of Code is an annual programming challenge where a new puzzle is released each day during the holiday season. The puzzles can be solved in any programming language, and they’re a great way to practice problem-solving, algorithms, and language-specific constructs.
