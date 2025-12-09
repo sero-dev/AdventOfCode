@@ -15,7 +15,7 @@ public class Problem01 : ProblemSolver
             if (string.IsNullOrWhiteSpace(line))
             {
                 testFreshness = true;
-                break;
+                continue;
             }
 
             if (!testFreshness)
